@@ -2,6 +2,8 @@
 :root {
   --button-color: #d2401e;
   --bg-cream: #f7f7f2;
+  --text-gold: #b7903c;
+  --main-black-text: #303030;
 }
 img {
   max-width: 100%;
@@ -11,7 +13,9 @@ img {
 body {
   font-family: "Teko", sans-serif;
 }
+
 /* HEADER */
+
 header {
   /* height: 200px; */
   background-image: url(../img/cielostellato.PNG);
@@ -22,6 +26,7 @@ header {
   border-radius: 0;
   color: white;
 }
+
 /*********************** JUMBOTRON ***********************/
 #jumbotron {
   position: relative;
@@ -36,11 +41,89 @@ header {
   transform: translate(-50%, -50%);
   /* height: 100%; */
 }
+
+/* MAIN */
+
 /*********************** GALLERY ***********************/
 #gallery {
   display: flex;
   column-gap: 5px;
 }
-/* MAIN */
+
+/*********************** QUOTE ***********************/
+#quote {
+  /* height: 200px; */
+  background-image: url(../img/h3-testimonials-bckgrnd.jpg);
+  background-position: center;
+  background-size: contain;
+  color: var(--main-black-text);
+}
+.quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 40%;
+  text-align: center;
+}
+.fa-quote-left {
+  font-size: 4rem;
+  color: var(--text-gold);
+}
+.fa-circle {
+  font-size: 0.5rem;
+  padding-right: 5px;
+  color: #e4e4d4;
+}
+.author {
+  color: #d2401e;
+  margin-bottom: 15px;
+}
+.fa-circle:first-child {
+  color: var(--text-gold);
+}
+/*********************** SPECIALITA' ***********************/
+.col-left {
+  width: 50%;
+  background-image: url(../img/h1-img-4.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.specials-text {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#specials ul {
+  list-style: none;
+}
+.prezzo {
+  /* font-size: 1.5rem; */
+  color: var(--button-color);
+}
+.text-muted {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.5rem;
+  line-height: 0.7rem;
+}
+.text-muted1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.7rem;
+  line-height: 0.9rem;
+}
+
+/*********************** TEAM ***********************/
+#team {
+  display: flex;
+}
+#team div {
+  /* height: 100%; */
+}
+.stocazzo {
+  object-fit: cover;
+  height: 100%;
+}
 
 /* FOOTER */
