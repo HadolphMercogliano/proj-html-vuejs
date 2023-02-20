@@ -3,8 +3,38 @@
   --button-color: #d2401e;
   --bg-cream: #f7f7f2;
 }
-/* HEADER */
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
 
+body {
+  font-family: "Teko", sans-serif;
+}
+/* HEADER */
+header {
+  /* height: 200px; */
+  background-image: url(../img/cielostellato.PNG);
+  background-position: center;
+}
+.btn-red {
+  background-color: var(--button-color);
+  border-radius: 0;
+  color: white;
+}
+#jumbotron {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.slice {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* height: 100%; */
+}
 /* MAIN */
 
 /* FOOTER */
