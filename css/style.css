@@ -22,6 +22,7 @@ header {
   border-radius: 0;
   color: white;
 }
+/*********************** JUMBOTRON ***********************/
 #jumbotron {
   position: relative;
   display: flex;
@@ -34,6 +35,11 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
   /* height: 100%; */
+}
+/*********************** GALLERY ***********************/
+#gallery {
+  display: flex;
+  column-gap: 5px;
 }
 /* MAIN */
 
