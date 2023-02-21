@@ -423,14 +423,65 @@
       <footer>
         <!------------------- PARTE SINISTRA  ------------------->
         <div class="col-left">
-          <div class="row">
-            <div class="col-4"></div>
-            <div class="col-4">
-              <span>WORKING HOURS</span>
+          <div class="row px-3 mt-5">
+            <div class="col-3 me-3">
+              <!------------------- RESTAURANT LIST  ------------------->
+              <h5>FIND OUR RESTAURANTS</h5>
+              <ul v-for="restaurant in restaurants">
+                <li>
+                  <p>{{restaurant.road }}</p>
+                  <p>{{restaurant.city }}</p>
+                  <p>{{restaurant.telephone }}</p>
+                </li>
+              </ul>
             </div>
-            <div class="col-4"></div>
+
+            <!------------------- WORKING HOURS  ------------------->
+            <div class="col-4">
+              <h5>WORKING HOURS</h5>
+              <h6>MONDAY</h6>
+              <p class="small-red-text">Kitchen Closed</p>
+              <h6>TUESDAY UNTIL FRIDAY</h6>
+              <p>9:00 - 22:00</p>
+              <h6 class="d-inline">SATURDAY</h6>
+              <span class="red-text"> *</span>
+              <p>Saturday 11am to midnight</p>
+              <h6>SUNDAY</h6>
+              <p>9:00 - 22:00</p>
+
+              <!------------------- SOCIALS  ------------------->
+              <h6 class="d-inline">FOLLOW US:</h6>
+              <ul class="d-inline socials m-0 p-0 ps-1">
+                <li class="d-inline">
+                  <i class="fa-brands fa-twitter pe-1"></i>
+                </li>
+                <li class="d-inline">
+                  <i class="fa-brands fa-facebook-f px-1"></i>
+                </li>
+                <li class="d-inline">
+                  <i class="fa-brands fa-instagram px-1"></i>
+                </li>
+                <li class="d-inline">
+                  <i class="fa-brands fa-linkedin-in px-1"></i>
+                </li>
+              </ul>
+            </div>
+            <!------------------- MESSAGGIO  ------------------->
+
+            <div class="col-4 h5 text-light">{{message}}</div>
           </div>
-          <div></div>
+          <div class="d-flex justify-content-between align-items-end my-4 mx-3">
+            <div>
+              <span class="created">Created with &hearts; by </span>
+              <span class="author ps-1"> Qode Interactive</span>
+            </div>
+            <div>
+              <img
+                class="footer-img"
+                src="./img/footer-bottom-img.png"
+                alt=" Natural product premium quality" />
+            </div>
+          </div>
         </div>
         <!------------------- PARTE DESTRA  ------------------->
         <div class="col-right"></div>

@@ -58,7 +58,8 @@ const myApp = Vue.createApp({
           telephone: "(989)867-1010",
         },
       ],
-      socials: ["", "", "", ""],
+      message:
+        "THE DON PEPPE CREW FIRST AND FOREMOST VALUES AN AUTHENTIC, WELL BAKED SLICE OF PIZZA.",
     };
   },
 });
