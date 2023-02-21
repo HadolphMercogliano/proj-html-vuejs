@@ -13,6 +13,7 @@ img {
 body {
   font-family: "Teko", sans-serif;
   color: var(--main-black-text);
+  /* overflow-x: auto; */
 }
 
 /* HEADER */
@@ -136,6 +137,8 @@ header {
 
 /*********************** MENU ***********************/
 #menu {
+  /* overflow-x: auto; */
+  /* width: 1200px; */
 }
 .text-small2 {
   font-family: Arial, Helvetica, sans-serif;
@@ -143,16 +146,34 @@ header {
   line-height: 0.9rem;
   color: #5a5a5a;
 }
+
 .menu-gallery {
   padding: 40px 0;
   display: flex;
   flex-wrap: nowrap;
-  overflow: hidden;
-  width: 150%;
+  min-width: 1200px;
+  max-width: 2000px;
+}
+.overflow1 {
+  overflow-x: auto;
 }
 .menu-gallery img {
-  width: 150px;
-  margin: 0 50px;
+  min-width: 200px;
+  max-width: 250px;
+  margin: 0 40px;
+}
+.menu-gallery .pizza {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.pizza-text {
+  padding-top: 10px;
+  text-align: center;
+  color: var(--text-gold);
+}
+.pizza-text .prezzo {
+  font-size: 0.8rem;
 }
 
 /* FOOTER */
