@@ -15,7 +15,10 @@ body {
   color: var(--main-black-text);
   /* overflow-x: auto; */
 }
-
+button.btn-red:hover {
+  color: white;
+  background-color: #b92c0c;
+}
 /* HEADER */
 
 header {
@@ -80,13 +83,13 @@ header {
 .small-red-text {
   color: #d2401e;
   margin-bottom: 15px;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 .fa-circle:first-child {
   color: var(--text-gold);
 }
 /*********************** SPECIALITA' ***********************/
-.col-left {
+#specials .col-left {
   width: 50%;
   background-image: url(../img/h1-img-4.jpg);
   background-position: center;
@@ -101,7 +104,7 @@ header {
 #specials ul {
   list-style: none;
 }
-.prezzo {
+.red-text {
   /* font-size: 1.5rem; */
   color: var(--button-color);
 }
@@ -137,8 +140,7 @@ header {
 
 /*********************** MENU ***********************/
 #menu {
-  /* overflow-x: auto; */
-  /* width: 1200px; */
+  padding-top: 50px;
 }
 .text-small2 {
   font-family: Arial, Helvetica, sans-serif;
@@ -172,8 +174,80 @@ header {
   text-align: center;
   color: var(--text-gold);
 }
-.pizza-text .prezzo {
-  font-size: 0.8rem;
+
+/*********************** EVENTI ***********************/
+#events {
+  display: flex;
+}
+#events .col-right {
+  background-image: url(../img/h3-img-5a.jpg);
+  background-position: center;
+  background-size: cover;
+}
+#events .col-right img {
+  object-fit: cover;
+}
+#events .col-left {
+  width: 50%;
+  background-image: url(../img/cielostellato.PNG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 50px;
+  border-right: 1px solid white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#events .text-area {
+  width: 60%;
+  margin: 40px auto;
+  color: white;
+}
+#events .small-red-text {
+  font-size: 0.6rem;
+}
+#events .text-area .red-text {
+  /* line-height: 1.2rem; */
+}
+#events .event {
+  padding: 10px 0;
+  border-bottom: 1px dotted var(--text-gold);
 }
 
+/*********************** PRENOTA ***********************/
+#booking {
+  background-image: url(../img/h3-background-img-3.jpg);
+  background-size: cover;
+  color: white;
+  padding: 50px 0;
+}
+#booking select,
+#booking input {
+  max-width: 18%;
+  color: #5a5a5a;
+  font-size: 0.9rem;
+  border: 1px solid #303030;
+}
+
+#booking button {
+  text-align: center;
+  width: 20%;
+  min-width: 100px;
+}
 /* FOOTER */
+footer {
+  height: 50vh;
+  display: flex;
+}
+footer .col-left {
+  width: 50%;
+  background-image: url(../img/cielostellato.PNG);
+}
+footer .col-right {
+  width: 50%;
+  background-image: url(../img/footer-img-1.jpg);
+  background-position: center;
+  background-size: cover;
+}
