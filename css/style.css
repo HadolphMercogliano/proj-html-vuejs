@@ -118,11 +118,9 @@ header {
 #team {
   display: flex;
 }
-#team div {
-  /* height: 100%; */
-}
-.stocazzo {
+.team-resized {
   object-fit: cover;
+  object-position: right;
   height: 100%;
 }
 
