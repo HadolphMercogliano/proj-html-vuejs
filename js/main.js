@@ -3,39 +3,48 @@ const myApp = Vue.createApp({
     return {
       links: [
         {
-          text: "",
+          text: "HOME",
           img: "",
+          logo: true,
+          logoPath: "./img/svg/svg-0.svg",
         },
         {
-          text: "",
+          text: "PAGES",
           img: "",
+          logo: false,
         },
         {
-          text: "",
+          text: "MENU'",
           img: "",
+          logo: false,
         },
         {
-          text: "",
-          img: "",
+          text: "EVENT",
+          img: "./img/h5-logo-divided-header.png",
+          logo: true,
         },
         {
-          text: "",
+          text: "BLOG",
           img: "",
+          logo: false,
         },
         {
-          text: "",
+          text: "LANDING",
           img: "",
+          logo: false,
         },
         {
-          text: "",
+          text: "CART",
           img: "",
+          logo: true,
         },
         {
-          text: "",
+          text: "SEARCH",
           img: "",
+          logo: true,
         },
       ],
-      image: "",
+      image: "./img/h5-logo-divided-header.png",
       restaurants: [
         {
           road: "1614 E. Bell Rd #104",

@@ -21,17 +21,24 @@ button.btn-red:hover {
   color: white;
   background-color: #b92c0c;
 }
-/* HEADER */
+
+/*********************** HEADER ***********************/
 
 header {
-  /* height: 200px; */
   background-image: url(../img/cielostellato.PNG);
   background-position: center;
+  color: white;
 }
 .btn-red {
   background-color: var(--button-color);
   border-radius: 0;
   color: white;
+}
+
+/*********************** NAVBAR ***********************/
+.nav-logo {
+  height: 0.6rem;
+  filter: invert(1);
 }
 
 /*********************** JUMBOTRON ***********************/
@@ -223,7 +230,8 @@ header {
   background-image: url(../img/h3-background-img-3.jpg);
   background-size: cover;
   color: white;
-  padding: 50px 0;
+  padding: 60px 0;
+  border-bottom: 1px solid white;
 }
 #booking select,
 #booking input {
