@@ -69,7 +69,8 @@
     <div id="root">
       <header class="">
         <nav class="d-flex justify-content-between align-items-center">
-          <div class="container d-flex justify-content-between align-items-center">
+          <div
+            class="container d-flex justify-content-between align-items-center">
             <div class="d-flex align-items-center">
               <a
                 href="#menu"
@@ -114,22 +115,22 @@
                 <span>SEARCH</span>
               </a>
             </div>
-          </nav>
-
-          <!------------------- SLIDER JUMBOTRON  ------------------->
-          <div
-            id="jumbotron"
-            class="">
-            <img
-              class="mx-5 p-5"
-              src="./img/h3-rev-img-5.png"
-              alt="" />
-
-            <img
-              class="slice p-3"
-              src="./img/h3-rev-img-6.png"
-              alt="" />
           </div>
+        </nav>
+
+        <!------------------- SLIDER JUMBOTRON  ------------------->
+        <div
+          id="jumbotron"
+          class="">
+          <img
+            class="mx-5 p-5"
+            src="./img/h3-rev-img-5.png"
+            alt="" />
+
+          <img
+            class="slice p-3"
+            src="./img/h3-rev-img-6.png"
+            alt="" />
         </div>
       </header>
 
@@ -178,6 +179,11 @@
               ><i class="fa-solid fa-circle"></i>
             </div>
           </div>
+          <div class="pizza-button rounded-circle">
+            <img
+              src="./img/svg/svg-4.svg"
+              alt="" />
+          </div>
         </div>
 
         <!------------------- SPECIALITA'  ------------------->
@@ -187,12 +193,18 @@
           <!-- img  -->
           <div class="col-left d-flex justify-content-center p-5">
             <img
-              class="p-5"
+              id="pizzaSpecial"
+              class=""
               src="./img/h1-img-7n.png"
               alt="" />
           </div>
           <!-- lista specialità -->
           <div class="specials-text py-5">
+            <div class="pizza-button rounded-circle">
+              <img
+                src="./img/svg/svg-4.svg"
+                alt="" />
+            </div>
             <div class="w-50">
               <h3 class="fw-500">SPECIALS*</h3>
               <p class="text-small1">
@@ -229,24 +241,35 @@
                   </p>
                 </div>
               </div>
-              <div></div>
-              <div></div>
             </div>
           </div>
         </div>
         <!------------------- BUILD YOUR PIZZA  ------------------->
-        <div id="build">
+        <div
+          id="build"
+          class="mb-1">
           <div class="side-row">
             <div class="side-win uno"></div>
             <div class="middle-win uno"></div>
             <div class="side-win due"></div>
           </div>
-           <div class="middle-row">
+          <div class="middle-row">
             <div class="side-win tre"></div>
-            <div class="middle-win due"></div>
-            <div class="side-win quattro"></div>
+
+            <div class="middle-win due">
+              <h2 class="build-message display-6">
+                GO AHEAD AND BUILD YOUR OWN PIZZA WE WON'T JUDGE!
+              </h2>
+            </div>
+            <div class="side-win quattro">
+              <div class="pizza-button rounded-circle">
+                <img
+                  src="./img/svg/svg-4.svg"
+                  alt="" />
+              </div>
+            </div>
           </div>
-           <div class="side-row">
+          <div class="side-row">
             <div class="side-win cinque"></div>
             <div class="middle-win tre"></div>
             <div class="side-win sei"></div>
@@ -255,7 +278,7 @@
         <!------------------- PRESENTAZIONE TEAM  ------------------->
         <div
           id="team"
-          class="pb-1">
+          class="mb-1">
           <div>
             <img
               class="team-resized"
@@ -271,47 +294,59 @@
 
           <div>
             <img
-              src="./img/h1-team-3a.jpg"
+              src="./img/h1-team-4a.jpg"
               alt="" />
           </div>
 
-          <div>
+          <div class="position-relative">
             <img
-              src="./img/h1-team-4a.jpg"
+              src="./img/h1-team-3a.jpg"
               alt="" />
+            <div class="pizza-button rounded-circle">
+              <img
+                src="./img/svg/svg-4.svg"
+                alt="" />
+            </div>
           </div>
         </div>
         <!------------------- PARTNERS  ------------------->
         <div id="partners">
-          <div>
-            <img
-              src="./img/h1-clients-img-4.png"
-              alt="" />
-          </div>
-          <div>
-            <img
-              src="./img/h1-clients-img-3.png"
-              alt="" />
-          </div>
-          <div>
-            <img
-              src="./img/h1-clients-img-1.png"
-              alt="" />
-          </div>
-          <div>
-            <img
-              src="./img/h1-clients-img-2.png"
-              alt="" />
-          </div>
-          <div>
-            <img
-              src="./img/h1-clients-img-5.png"
-              alt="" />
+          <div class="my-container">
+            <div>
+              <img
+                src="./img/h1-clients-img-4.png"
+                alt="" />
+            </div>
+            <div>
+              <img
+                src="./img/h1-clients-img-3.png"
+                alt="" />
+            </div>
+            <div>
+              <img
+                src="./img/h1-clients-img-1.png"
+                alt="" />
+            </div>
+            <div>
+              <img
+                src="./img/h1-clients-img-2.png"
+                alt="" />
+            </div>
+            <div>
+              <img
+                src="./img/h1-clients-img-5.png"
+                alt="" />
+            </div>
           </div>
         </div>
         <!------------------- MENU'  ------------------->
         <!-- titolo -->
         <div id="menu">
+          <div class="pizza-button rounded-circle bg-light">
+            <img
+              src="./img/svg/svg-4.svg"
+              alt="" />
+          </div>
           <section class="d-flex align-items-center flex-column">
             <p class="small-red-text m-0 p-0">CHOSE YOUR FLAVOR</p>
             <h2 class="fs-1">THE BEST PIZZA MENU IN TOWN</h2>
@@ -322,7 +357,7 @@
             </p>
           </section>
           <!-- galleria pizze -->
-          <div class="overflow1">
+          <div class="overflow1 mt-4">
             <div class="menu-gallery">
               <div class="pizza">
                 <img
@@ -342,13 +377,16 @@
                   <span class="small-red-text d-block">$7.00 - $30.00</span>
                 </div>
               </div>
-              <div class="pizza">
+              <div class="pizza position-relative">
                 <img
                   src="./img/h3-product-img-3a-150x150.png"
                   alt="" />
                 <div class="pizza-text">
                   <span>VALDOSTANA</span>
                   <span class="small-red-text d-block">$55.00</span>
+                </div>
+                <div class="sold-tag rounded-circle">
+                  <span>SOLD</span>
                 </div>
               </div>
               <div class="pizza">
@@ -385,6 +423,8 @@
         <div
           id="events"
           class="mb-1">
+          <!------------------- COL LEFT  ------------------->
+
           <div class="col-left">
             <div class="text-area">
               <span class="small-red-text">MADE WITH LOVE</span>
@@ -439,7 +479,25 @@
               </div>
             </div>
           </div>
-          <div class="col-right w-50"></div>
+
+          <!------------------- COL RIGHT  ------------------->
+          <div class="col-right w-50">
+            <div class="shopping-cart">
+              <img
+                src="./img/svg/svg-9.svg"
+                alt="" />
+            </div>
+            <div class="auto-roll">
+              <img
+                src="./img/svg/svg-7.svg"
+                alt="" />
+            </div>
+            <div class="pizza-button rounded-circle">
+              <img
+                src="./img/svg/svg-4.svg"
+                alt="" />
+            </div>
+          </div>
         </div>
         <!------------------- PRENOTA  ------------------->
         <div
@@ -477,7 +535,7 @@
               <option value="3">9:30 pm</option>
               <option value="3">10:00 pm</option>
             </select>
-            <button class="btn btn-red mx-5">BOOK A TABLE</button>
+            <a class="btn btn-red mx-5">BOOK A TABLE</a>
           </form>
         </div>
       </main>
@@ -515,16 +573,24 @@
               <h6 class="d-inline">FOLLOW US:</h6>
               <ul class="d-inline socials m-0 p-0 ps-1">
                 <li class="d-inline">
-                  <i class="fa-brands fa-twitter pe-1"></i>
+                  <a href="#">
+                    <i class="fa-brands fa-twitter pe-1"></i>
+                  </a>
                 </li>
                 <li class="d-inline">
-                  <i class="fa-brands fa-facebook-f px-1"></i>
+                  <a href="#">
+                    <i class="fa-brands fa-facebook-f px-1"></i>
+                  </a>
                 </li>
                 <li class="d-inline">
-                  <i class="fa-brands fa-instagram px-1"></i>
+                  <a href="#">
+                    <i class="fa-brands fa-instagram px-1"></i>
+                  </a>
                 </li>
                 <li class="d-inline">
-                  <i class="fa-brands fa-linkedin-in px-1"></i>
+                  <a href="#">
+                    <i class="fa-brands fa-linkedin-in px-1"></i>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -546,7 +612,13 @@
           </div>
         </div>
         <!------------------- PARTE DESTRA  ------------------->
-        <div class="col-right"></div>
+        <div class="col-right d-flex">
+          <div class="pizza-button rounded-circle bg-light">
+            <img
+              src="./img/svg/svg-4.svg"
+              alt="" />
+          </div>
+        </div>
       </footer>
     </div>
   </body>

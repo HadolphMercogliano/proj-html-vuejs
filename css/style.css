@@ -21,6 +21,19 @@ button.btn-red:hover {
   color: white;
   background-color: #b92c0c;
 }
+.pizza-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  aspect-ratio: 1;
+  padding: 5px;
+  background-color: white;
+  position: absolute;
+}
+.pizza-button img {
+  width: 60%;
+}
 
 /*********************** HEADER ***********************/
 
@@ -86,6 +99,7 @@ nav a {
   background-image: url(../img/h3-testimonials-bckgrnd.jpg);
   background-position: center;
   background-size: contain;
+  position: relative;
 }
 .quote {
   display: flex;
@@ -113,6 +127,10 @@ nav a {
 .fa-circle:first-child {
   color: var(--text-gold);
 }
+#quote .pizza-button {
+  bottom: 10px;
+  right: 10px;
+}
 /*********************** SPECIALITA' ***********************/
 #specials .col-left {
   width: 50%;
@@ -120,17 +138,27 @@ nav a {
   background-position: center;
   background-size: cover;
 }
+#pizzaSpecial {
+  padding: 8rem;
+}
 .specials-text {
   width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
+
+.specials-text .pizza-button {
+  bottom: 30%;
+  right: 20px;
+  background-color: #f6f7f2;
+}
+
 #specials ul {
   list-style: none;
 }
 .red-text {
-  /* font-size: 1.5rem; */
   color: var(--button-color);
 }
 .text-muted {
@@ -145,6 +173,7 @@ nav a {
   color: #8f8f8f;
 }
 /*********************** BUILD ***********************/
+
 .side-row {
   height: 70px;
   display: flex;
@@ -182,10 +211,16 @@ nav a {
   background-position: left bottom;
 }
 .side-win.tre {
+  position: relative;
   background-position: right 0 top 10%;
 }
 .side-win.quattro {
   background-position: left 10% top 0%;
+  position: relative;
+}
+.side-win.quattro .pizza-button {
+  bottom: 10px;
+  right: 10px;
 }
 .side-win.cinque {
   background-position: bottom 30% right 2%;
@@ -193,6 +228,13 @@ nav a {
 .side-win.sei {
   /* width: 40%; */
   background-position: top 80% left 20%;
+}
+.build-message {
+  width: 20%;
+  color: white;
+  position: relative;
+  top: -15%;
+  left: 15%;
 }
 
 /*********************** TEAM ***********************/
@@ -204,18 +246,26 @@ nav a {
   object-position: right;
   height: 100%;
 }
+#team .pizza-button {
+  bottom: 20px;
+  right: 10px;
+}
 
 /*********************** PARTNERS ***********************/
 #partners {
-  display: flex;
-  width: 75%;
-  margin: 0 auto;
+  background-color: #f7f7f2;
   padding: 40px 0;
+}
+#partners .my-container {
+  display: flex;
+  margin: 0 auto;
+  width: 75%;
 }
 
 /*********************** MENU ***********************/
 #menu {
   padding-top: 50px;
+  position: relative;
 }
 .text-small2 {
   font-family: Arial, Helvetica, sans-serif;
@@ -230,6 +280,7 @@ nav a {
   flex-wrap: nowrap;
   min-width: 1200px;
   max-width: 2000px;
+  position: relative;
 }
 .overflow1 {
   overflow-x: auto;
@@ -249,6 +300,42 @@ nav a {
   text-align: center;
   color: var(--text-gold);
 }
+#menu .pizza-button {
+  top: 25%;
+  right: 10px;
+}
+#menu .pizza-button {
+}
+#events .auto-roll {
+  background-color: #ef2853;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  aspect-ratio: 1;
+  padding: 5px;
+  cursor: pointer;
+  position: absolute;
+  top: -50px;
+  right: 0;
+}
+#events .auto-roll img {
+  width: 60%;
+}
+
+#menu .sold-tag {
+  color: white;
+  background-color: var(--button-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  aspect-ratio: 1;
+  padding: 7px;
+  position: absolute;
+  top: 5px;
+  right: 40px;
+}
 
 /*********************** EVENTI ***********************/
 #events {
@@ -258,6 +345,7 @@ nav a {
   background-image: url(../img/h3-img-5a.jpg);
   background-position: center;
   background-size: cover;
+  position: relative;
 }
 #events .col-right img {
   object-fit: cover;
@@ -283,12 +371,31 @@ nav a {
 #events .small-red-text {
   font-size: 0.6rem;
 }
-#events .text-area .red-text {
-  /* line-height: 1.2rem; */
-}
+
 #events .event {
   padding: 10px 0;
   border-bottom: 1px dotted var(--text-gold);
+}
+#events .shopping-cart {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  aspect-ratio: 1;
+  padding: 5px;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+#events .shopping-cart img {
+  width: 60%;
+}
+#events .pizza-button {
+  top: 70%;
+  right: 5%;
 }
 
 /*********************** PRENOTA ***********************/
@@ -312,7 +419,8 @@ nav a {
   width: 20%;
   min-width: 100px;
 }
-/* FOOTER */
+
+/*********************** FOOTER ***********************/
 footer {
   display: flex;
 }
@@ -325,6 +433,7 @@ footer .col-right {
   background-image: url(../img/footer-img-1.jpg);
   background-position: center;
   background-size: cover;
+  position: relative;
 }
 footer h5 {
   color: var(--text-gold);
@@ -361,4 +470,13 @@ footer li p {
 }
 .footer-img {
   width: 80%;
+}
+.socials a {
+  color: white;
+}
+
+footer .pizza-button {
+  top: 90%;
+  right: 5%;
+  z-index: 1;
 }
