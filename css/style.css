@@ -34,6 +34,48 @@ button.btn-red:hover {
 .pizza-button img {
   width: 60%;
 }
+.prev-button {
+  color: var(--button-color);
+  background-color: white;
+  border-radius: 50%;
+  height: 70px;
+  padding-left: 30px;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  cursor: pointer;
+}
+.prev-button p {
+  transform: rotate(90deg);
+  margin: 0;
+  padding: 0;
+}
+.prev-button:hover {
+  scale: 1.2;
+}
+.next-button {
+  color: var(--button-color);
+  background-color: white;
+  border-radius: 50%;
+  height: 70px;
+  padding-right: 30px;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  cursor: pointer;
+}
+.next-button p {
+  transform: rotate(-90deg);
+  margin: 0;
+  padding: 0;
+}
+.next-button:hover {
+  scale: 1.2;
+}
 
 /*********************** HEADER ***********************/
 
@@ -54,6 +96,14 @@ header {
 header ul {
   list-style: none;
   margin: 0;
+}
+header .prev-button {
+  top: 40%;
+  left: -42px;
+}
+header .next-button {
+  top: 40%;
+  right: -42px;
 }
 
 /*********************** NAVBAR ***********************/
@@ -76,7 +126,7 @@ nav a {
   justify-content: center;
   align-content: center;
 }
-.slice {
+.pizza-slice {
   padding-top: 180px;
   position: absolute;
   top: 50%;
@@ -130,6 +180,14 @@ nav a {
 #quote .pizza-button {
   bottom: 10px;
   right: 10px;
+}
+#quote .prev-button {
+  top: 40%;
+  left: -42px;
+}
+#quote .next-button {
+  top: 40%;
+  right: -42px;
 }
 /*********************** SPECIALITA' ***********************/
 #specials .col-left {
