@@ -17,7 +17,7 @@ body {
   color: var(--main-black-text);
   /* overflow-x: auto; */
 }
-button.btn-red:hover {
+.btn.btn-red:hover {
   color: white;
   background-color: #b92c0c;
 }
