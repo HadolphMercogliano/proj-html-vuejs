@@ -140,8 +140,8 @@ nav a {
 }
 nav a:hover {
   color: white;
-  scale: 1.1;
 }
+
 /*********************** JUMBOTRON ***********************/
 #jumbotron {
   position: relative;
