@@ -7,44 +7,56 @@ const myApp = Vue.createApp({
           img: "",
           logo: true,
           logoPath: "./img/svg/svg-0.svg",
+          href: "#root",
         },
         {
           text: "PAGES",
           img: "",
           logo: false,
+          href: "#",
         },
         {
           text: "MENU'",
           img: "",
           logo: false,
+          href: "#menu",
+        },
+        {
+          logoPath: "./img/h5-logo-divided-header.png",
+          logoDivider: true,
+          href: "#root",
         },
         {
           text: "EVENT",
-          img: "./img/h5-logo-divided-header.png",
-          logo: true,
+          img: "",
+          logo: false,
+          href: "#events",
         },
         {
           text: "BLOG",
           img: "",
           logo: false,
+          href: "#",
         },
         {
           text: "LANDING",
           img: "",
           logo: false,
+          margin: "separator",
+          href: "#",
         },
-        {
-          text: "CART",
-          img: "",
-          logo: true,
-        },
-        {
-          text: "SEARCH",
-          img: "",
-          logo: true,
-        },
+        // {
+        //   text: "CART",
+        //   logoPath: "./img/svg/svg-1.svg",
+        //   logo: true,
+        // },
+        // {
+        //   text: "SEARCH",
+        //   img: "",
+        //   logo: true,
+        // },
       ],
-      image: "./img/h5-logo-divided-header.png",
+
       restaurants: [
         {
           road: "1614 E. Bell Rd #104",

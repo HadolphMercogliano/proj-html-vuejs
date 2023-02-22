@@ -26,21 +26,36 @@ button.btn-red:hover {
 
 header {
   background-image: url(../img/cielostellato.PNG);
-  background-position: center;
+  background-position: bottom;
   color: white;
 }
+
 .btn-red {
   background-color: var(--button-color);
   border-radius: 0;
   color: white;
 }
+.btn.btn-red {
+  min-width: 100px;
+}
+header ul {
+  list-style: none;
+  margin: 0;
+}
 
 /*********************** NAVBAR ***********************/
 .nav-logo {
   height: 0.6rem;
+  padding-right: 5px;
   filter: invert(1);
 }
-
+.nav-divider {
+  width: 120px;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+}
 /*********************** JUMBOTRON ***********************/
 #jumbotron {
   position: relative;
@@ -49,6 +64,7 @@ header {
   align-content: center;
 }
 .slice {
+  padding-top: 180px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -127,6 +143,56 @@ header {
   font-size: 0.7rem;
   line-height: 0.9rem;
   color: #8f8f8f;
+}
+/*********************** BUILD ***********************/
+.side-row {
+  height: 70px;
+  display: flex;
+}
+.middle-row {
+  height: 140px;
+  display: flex;
+}
+.middle-win {
+  width: 90%;
+  height: 100%;
+  background-image: url(../img/h3-background-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.side-win {
+  width: 5%;
+  height: 100%;
+  background-image: url(../img/h3-background-img.jpg);
+  background-repeat: no-repeat;
+}
+.middle-win.uno {
+  background-position: bottom;
+}
+.middle-win.due {
+  background-position: top 5% right 0;
+}
+.middle-win.tre {
+  background-position: bottom 30% right 0%;
+}
+.side-win.uno {
+  background-position: right bottom;
+}
+.side-win.due {
+  background-position: left bottom;
+}
+.side-win.tre {
+  background-position: right 0 top 10%;
+}
+.side-win.quattro {
+  background-position: left 10% top 0%;
+}
+.side-win.cinque {
+  background-position: bottom 30% right 2%;
+}
+.side-win.sei {
+  /* width: 40%; */
+  background-position: top 80% left 20%;
 }
 
 /*********************** TEAM ***********************/

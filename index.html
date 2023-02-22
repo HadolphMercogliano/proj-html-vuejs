@@ -68,21 +68,52 @@
   <body>
     <div id="root">
       <header class="">
-        <div class="container">
-          <nav>
-            <button class="btn btn-red">ORDER ONLINE</button>
-            <ul
-              class="d-inline"
-              v-for="link in links.slice(0, 3)">
-              <li class="d-inline">
-                <img
-                  v-if="(link.logo)"
-                  class="nav-logo"
-                  :src="link.logoPath"
-                  alt="" />
-                {{link.text}}
+        <nav class="d-flex justify-content-between align-items-center">
+          <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+              <a
+                href="#menu"
+                class="btn btn-red">
+                ORDER ONLINE
+              </a>
+            </div>
+            <ul class="d-flex justify-content-center align-items-center">
+              <li
+                v-for="(link,index) in links"
+                class="d-flex align-items-center me-3 nav-link">
+                <a :href="link.href">
+                  <img
+                    v-if="(link.logo)"
+                    class="nav-logo"
+                    :src="link.logoPath"
+                    alt="" />
+
+                  <img
+                    v-else-if="(link.logoDivider)"
+                    class="nav-divider"
+                    :src="link.logoPath"
+                    alt="" />
+                  <span>{{link.text}}</span>
+                </a>
               </li>
             </ul>
+            <div>
+              <a
+                class="me-3"
+                href="#">
+                <img
+                  class="nav-logo"
+                  src="./img/svg/svg-1.svg"
+                  alt="" />
+                <span>CART</span>
+              </a>
+              <a
+                class=""
+                href="#">
+                <i class="fa-solid fa-magnifying-glass me-1"></i>
+                <span>SEARCH</span>
+              </a>
+            </div>
           </nav>
 
           <!------------------- SLIDER JUMBOTRON  ------------------->
@@ -203,8 +234,24 @@
             </div>
           </div>
         </div>
-        <!------------------- COMPONI LA TUA PIZZA  ------------------->
-        <div id="build"></div>
+        <!------------------- BUILD YOUR PIZZA  ------------------->
+        <div id="build">
+          <div class="side-row">
+            <div class="side-win uno"></div>
+            <div class="middle-win uno"></div>
+            <div class="side-win due"></div>
+          </div>
+           <div class="middle-row">
+            <div class="side-win tre"></div>
+            <div class="middle-win due"></div>
+            <div class="side-win quattro"></div>
+          </div>
+           <div class="side-row">
+            <div class="side-win cinque"></div>
+            <div class="middle-win tre"></div>
+            <div class="side-win sei"></div>
+          </div>
+        </div>
         <!------------------- PRESENTAZIONE TEAM  ------------------->
         <div
           id="team"
